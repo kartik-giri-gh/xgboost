@@ -2,5 +2,17 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "xgboost"
+version = "0.90"
+description = "XGBoost Python package"
+authors = [{ name = "DMLC" }]
+license = { text = "Apache-2.0" }
+readme = "README.md"
+requires-python = ">=3.6"
+
+[tool.setuptools]
+package-dir = { "" = "python-package" }
+
 [tool.setuptools.packages.find]
 where = ["python-package"]
